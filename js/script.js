@@ -160,6 +160,10 @@ if(!reduceMotion2){
   window.addEventListener('scroll', () => {
     btn.classList.toggle('show', window.scrollY > 700);
   });
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 })();
 
 // ---- live Jakarta clock ----
