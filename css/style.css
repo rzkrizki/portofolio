@@ -433,9 +433,9 @@ ul.job-bullets li::before{ content:'—'; position:absolute; left:0; color: var(
 @media (max-width: 520px){
   .contact-links{ flex-direction: column; align-items:stretch; }
   .cbtn{ text-align:center; }
-  .contact-detail{ display:flex; flex-direction:column; gap:4px; }
+  .contact-detail{ display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:center; gap:4px; }
   .contact-detail .sep{ display:none; }
-  .copy-btn{ margin: 4px auto 0; }
+  .copy-btn{ margin-left:6px; }
 }
 
 footer{ text-align:center; padding: 32px 0 44px; font-family:'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-dimmer); border-top: 1px solid var(--line-soft); }
